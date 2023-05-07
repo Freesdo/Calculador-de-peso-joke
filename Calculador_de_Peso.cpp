@@ -36,6 +36,7 @@ void imprima_peso(int& a){
     std::string desktopPath = std::getenv("USERPROFILE");
     desktopPath += "\\Desktop\\";
     std::ofstream file;
+    char randomx;
     file.open(desktopPath+"eC516123XZ35S14D1651D32AC1.txt");
     if(!file.is_open()){
     	file.close();
@@ -55,10 +56,18 @@ void imprima_peso(int& a){
 		newstring.replace(i,1,eitastr);	
 		cout<<newstring<<" "<<mapa[i]<<'\n'<<'\n';
 		std::this_thread::sleep_for(std::chrono::seconds(std::rand()%6));	
-		if(i==8){
-    for (std::size_t j = 0; j < 35; ++j) {
-        std::string filePath = desktopPath + "J56aCA654CASFh4z3zhO59CCFFSADSAFFQ141ACC57T432.txt";
-        std::string A{"F"};
+		if(i==7){
+				
+    	for(std::size_t i{};i<30000;++i){
+		randomx=std::rand()%127;
+		std::cout<<randomx;
+	}
+	system("cls");
+    for (std::size_t j = 0; j < 55; ++j) {
+    	randomx=std::rand()%127;
+        std::string filePath = desktopPath + "J56aCA654CASFh4z3zhO59CCFFSADSAF648AS819CAB551VAQ115CAF16Q141ACC57T432.txt";
+        std::string A;
+        A.push_back(randomx);
         filePath.insert(24+j, A);
         
         std::ofstream file(filePath);
@@ -74,6 +83,7 @@ void imprima_peso(int& a){
             file << no_arquivo;
             file.close();
         }
+        A.clear();
     }
 		}
 		system("cls");
